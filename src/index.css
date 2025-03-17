@@ -2,11 +2,9 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,15 +16,16 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -46,9 +45,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -65,4 +66,74 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Full width containers */
+#root,
+.app-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Make all major containers full-width */
+.container,
+.container-fluid {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-fluid {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+}
+
+/* Full-width sections */
+main,
+section,
+.hero-section,
+.content-section {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Hero section styling */
+.hero-section {
+  background-color: #212529;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+/* Content section styling */
+.content-section {
+  padding: 3rem 0;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100% !important;
+}
+
+/* Footer styling */
+footer {
+  width: 100% !important;
+  margin-top: auto;
+}
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
 }

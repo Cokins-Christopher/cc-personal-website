@@ -1,22 +1,28 @@
+// pages/About.tsx
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
 const About: React.FC = () => {
   return (
-    <Container className="py-5">
+    <Container fluid className="py-5 w-100">
       <Row className="mb-5">
         <Col lg={6}>
           <h1 className="mb-4">About Me</h1>
           <p>
-            Hello! I'm [Your Name], a passionate [Your Profession] based in
-            [Your Location].
+            Hello! I'm Cole Cokins, a Computer Science student at Southern
+            Methodist University in Dallas, TX.
           </p>
           <p>
-            Brief description of your background, education, and what drives you
-            professionally...
+            I'm currently pursuing a Bachelor of Science in Computer Science
+            with a minor in Business at SMU's Lyle School of Engineering. I'm
+            set to graduate in May 2025, and I've completed the maximum number
+            of credit hours each semester, totaling 72+ hours.
           </p>
           <p>
-            More about your journey, interests, and what makes you unique...
+            My coursework includes Data Structures, Financial Accounting, C++,
+            Calculus II, and Discrete Computational Structures. I balance my
+            technical studies with practical business knowledge, allowing me to
+            approach problems from multiple perspectives.
           </p>
         </Col>
         <Col lg={6} className="text-center">
@@ -39,16 +45,22 @@ const About: React.FC = () => {
 
       <Row>
         <Col md={4} className="mb-4">
-          <h4>Front-End Development</h4>
-          <p>HTML, CSS, JavaScript, React, TypeScript, Bootstrap</p>
+          <h4>Technical Skills</h4>
+          <p>
+            C++, Java, JavaScript, HTML/CSS, React, Git/GitHub, Python, MySQL,
+            NoSQL, Bootstrap
+          </p>
         </Col>
         <Col md={4} className="mb-4">
-          <h4>Design</h4>
-          <p>UI/UX, Figma, Adobe XD, Responsive Design</p>
+          <h4>Business & Analysis</h4>
+          <p>
+            Financial Modeling, Data Analysis, Project Management, Strategic
+            Planning
+          </p>
         </Col>
         <Col md={4} className="mb-4">
-          <h4>Other Skills</h4>
-          <p>Git, Agile Development, Team Collaboration</p>
+          <h4>Leadership & Languages</h4>
+          <p>Team Leadership, Mentoring, Spanish (Conversational)</p>
         </Col>
       </Row>
     </Container>

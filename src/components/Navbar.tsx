@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const MainNavbar: React.FC = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-      <Container>
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="w-100">
+      <Container fluid>
         <Navbar.Brand as={Link} to="/">
-          Your Name
+          Cole Cokins
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

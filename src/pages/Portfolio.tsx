@@ -1,37 +1,50 @@
+// pages/Portfolio.tsx
 import React from "react";
 import { Container, Row, Col, Card, Badge } from "react-bootstrap";
 
 const Portfolio: React.FC = () => {
-  // Sample project data - you would replace this with your actual projects
+  // Projects based on your skills and experience
   const projects = [
     {
       id: 1,
-      title: "Project One",
-      description: "Brief description of this project and your role in it...",
+      title: "Personal Portfolio Website",
+      description:
+        "This responsive personal website built with React, TypeScript, and Bootstrap to showcase my skills and experience.",
       image: "/placeholder-project1.jpg",
       tags: ["React", "TypeScript", "Bootstrap"],
-      link: "https://github.com/yourusername/project1",
+      link: "https://github.com/colecokins/personal-website",
     },
     {
       id: 2,
-      title: "Project Two",
-      description: "Brief description of this project and your role in it...",
+      title: "Data Analysis Dashboard",
+      description:
+        "Financial analysis dashboard created during my internship at Trammell Crow Residential to visualize investment opportunities.",
       image: "/placeholder-project2.jpg",
-      tags: ["Node.js", "Express", "MongoDB"],
-      link: "https://github.com/yourusername/project2",
+      tags: ["Python", "JavaScript", "Data Analysis"],
+      link: "#",
     },
     {
       id: 3,
-      title: "Project Three",
-      description: "Brief description of this project and your role in it...",
+      title: "Project Management Tool",
+      description:
+        "Web application to manage construction projects, developed during my internship at HPI Real Estate and Investments.",
       image: "/placeholder-project3.jpg",
-      tags: ["React Native", "Firebase"],
-      link: "https://github.com/yourusername/project3",
+      tags: ["React", "Node.js", "MongoDB"],
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "SMU Rugby Team Website",
+      description:
+        "Website for the SMU Rugby team to increase visibility and manage team operations.",
+      image: "/placeholder-project4.jpg",
+      tags: ["HTML/CSS", "JavaScript", "Bootstrap"],
+      link: "#",
     },
   ];
 
   return (
-    <Container className="py-5">
+    <Container fluid className="py-5 w-100">
       <Row className="mb-4">
         <Col>
           <h1>My Portfolio</h1>
